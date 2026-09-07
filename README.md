@@ -55,3 +55,14 @@ Landing page de un catálogo de productos de audio (parlantes, subwoofers, torre
 ## Estructura de la base de datos
 
 Tabla `productos` con columnas: `id`, `nombre`, `marca`, `categoria`, `modelo`, `precio`, `descripcion`, `slug` (único), `imagen_url`, `stock`, `created_at`. Protegida con una política RLS que permite lectura pública (`SELECT`) y bloquea escritura desde el cliente.
+
+## Capturas de pantalla
+
+### Página principal
+[Pagina principal](public/screenshots/home.png)
+
+### Detalle de producto
+[Detalle de producto](public/screenshots/detalle.png)
+
+### Vista por marca
+[Vista por marca](public/screenshots/marca.png)
