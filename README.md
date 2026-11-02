@@ -2,6 +2,11 @@
 
 Landing page de un catálogo de productos de audio (parlantes, subwoofers, torres de sonido) de marcas como JBL, Sony, Bose, Behringer y Xiaomi. Construida con Next.js 16 (App Router) y Supabase como base de datos y backend serverless.
 
+## Despliegue
+
+Aplicación en producción con AWS Amplify:
+https://master.d270kqwc8gt268.amplifyapp.com
+
 ## Caracteristicas implementadas
 
 - Listado de productos consumido desde Supabase (Server Components)
@@ -17,31 +22,31 @@ Landing page de un catálogo de productos de audio (parlantes, subwoofers, torre
 - TypeScript
 - Tailwind CSS
 - Supabase (PostgreSQL + API + RLS)
-- Vercel (despliegue)
+- AWS Amplify (despliegue)
 
 ## Instalacion local
 
 1. Clonar el repositorio:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/FranklinGranados/catalogo-audio.git
    cd catalogo-audio
-   \`\`\`
+   ```
 
 2. Instalar las dependencias:
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. Crear un archivo `.env.local` en la raiz del proyecto, basandose en `.env.example`, y completalo con sus propias credenciales de Supabase:
-   \`\`\`
+   ```
    NEXT_PUBLIC_SUPABASE_URL=tu_url_de_supabase
    NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_anon_key_de_supabase
-   \`\`\`
+   ```
 
 4. Correr el servidor de desarrollo:
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 5. Abrir [http://localhost:3000](http://localhost:3000) en su navegador.
 
@@ -58,11 +63,14 @@ Tabla `productos` con columnas: `id`, `nombre`, `marca`, `categoria`, `modelo`, 
 
 ## Capturas de pantalla
 
-### Página principal
-[Pagina principal](public/screenshots/home.png)
+### Build exitoso en AWS Amplify
+![Build en Amplify](public/screenshots/amplify-build-app.png)
+
+### Pagina principal
+![Pagina principal](public/screenshots/home.png)
 
 ### Detalle de producto
-[Detalle de producto](public/screenshots/detalle.png)
+![Detalle de producto](public/screenshots/detalle.png)
 
 ### Vista por marca
-[Vista por marca](public/screenshots/marca.png)
+![Vista por marca](public/screenshots/marca.png)
